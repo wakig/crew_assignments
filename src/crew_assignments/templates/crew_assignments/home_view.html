@@ -8,3 +8,14 @@
 {% else %}
     <p>No crews are available.</p>
 {% endif %}
+<br>
+<h1>Flights: </h1>
+{% if flight_list %}
+    <ul>
+    {% for flight in flight_list %}
+        <li>{{ flight.flight_code }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No flights are available.</p>
+{% endif %}
