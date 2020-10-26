@@ -1,1 +1,10 @@
-lkj
+<h1>Crew: </h1>
+{% if crew_list %}
+    <ul>
+    {% for crew in crew_list %}
+        <li>{{ crew.crew_fname }} {{ crew.crew_lname }}, {{ crew.crew_role }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No crews are available.</p>
+{% endif %}
