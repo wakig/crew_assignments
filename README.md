@@ -8,4 +8,4 @@ In order to install this app to another project,
 2. In "settings.py" (project settings) -> INSTALLED_APPS, add the string `'crew_assignments'`.
 3. In "urls.py" (project URLs), add the line `path('crew_assignments/', include('crew_assignments.urls')),`.
 
-The URL for the app's main page is "http://localhost:8000/crew_assignments/".
+The URL for the app's main page is http://localhost:8000/crew_assignments/.
