@@ -9,6 +9,8 @@ def index(request):
     
 class HomeView(View):
     template_name = 'crew_assignments/home_view.html'
+    crew_list = Crew.objects.all()
+    context = {'crew_list': crew_list}
     
     def get(self, request, *args, **kwargs):
-        context = {:}
+        return render(request, self.template_name, self.context)
