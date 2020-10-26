@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'airline',
         'USER': 'postgres',
-        'PASSWORD': 'iera20ccem',
+        'PASSWORD': '',
         'OPTIONS': {'sslmode':'disable'},
     }
 }
