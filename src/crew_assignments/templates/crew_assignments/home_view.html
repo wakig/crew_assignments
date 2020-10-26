@@ -14,6 +14,10 @@
     <ul>
     {% for flight in flight_list %}
         <li>{{ flight.flight_code }}</li>
+        <ul>
+            <li>Departure: {{ flight.flight_dep_date }} at {{ flight.flight_dep_time }}</li>
+            <li>Arrival: {{ flight.flight_arrival_date }} at {{ flight.flight_arrival_time }}</li>
+        </ul>
     {% endfor %}
     </ul>
 {% else %}
