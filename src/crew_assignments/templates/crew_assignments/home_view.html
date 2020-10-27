@@ -27,3 +27,15 @@
 {% else %}
     <p>No flights are available.</p>
 {% endif %}
+<br>
+<h1>Crew Assignments:</h1>
+{% if assign_list %}
+    <ul>
+    {% for assign in assign_list %}
+        <li>{{ assign.crew.crew_fname }} {{ assign.crew.crew_lname }} on {{ assign.flight.flight_code }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No crew assignments are available.</p>
+{% endif %}
+<a href="http://localhost:8000/passenger_view/">Go to Passenger View</a>
